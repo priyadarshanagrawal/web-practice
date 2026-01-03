@@ -1,19 +1,79 @@
+/* ====== Reset & Body ====== */
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
 }
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  color: brown;
-  background-color: red;
+
+/* ====== Header ====== */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
- 
 
+header h1 {
+    margin: 0;
+}
 
+/* ====== Navigation ====== */
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
 
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+nav a:hover {
+    color: yellow;
+}
 
+/* ====== Main Content ====== */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+}
+
+.product button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.product button:hover {
+    background-color: darkgreen;
+}
+
+/* ====== Footer ====== */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
