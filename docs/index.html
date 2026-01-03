@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Web Practice</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Simple E-Commerce Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello Web Development!</h1>
-  <button onclick="sayHi()">Hiii</button>
 
-  <script src="script.js"></script>
+    <!-- Header -->
+    <header>
+        <h1>My Simple Shop</h1>
+        <p>Your one-stop online store</p>
+        <h3>🛒 Cart: <span id="cart-count">0</span></h3>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Cart</a>
+        <a href="#">Login</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Featured Products</h2>
+
+        <div class="products">
+            <div class="product">
+                <h3>Product 1</h3>
+                <p>$20</p>
+                <button onclick="addToCart('Product 1')">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h3>Product 2</h3>
+                <p>$35</p>
+                <button onclick="addToCart('Product 2')">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <h3>Product 3</h3>
+                <p>$50</p>
+                <button onclick="addToCart('Product 3')">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Simple Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
